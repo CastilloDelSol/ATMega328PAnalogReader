@@ -58,8 +58,9 @@ void loop() {
 
 | Method | Description |
 |---------|-------------|
-| `void begin(uint8_t prescalerBits = 7)` | Initializes the ADC with a custom prescaler. |
+| `bool begin(uint8_t prescalerBits = 7)` | Initializes the ADC with a custom prescaler. |
 | `void end()` | Restores previous ADC configuration. |
+| `bool initialized()` | Returns status of initialization. |
 | `uint16_t read(uint8_t pin)` | Fast single analog read. |
 | `readAveraged<AVG_POW2>(uint8_t pin)` | Performs 2^AVG_POW2 averaged readings. |
 | `readHighRes<OUTPUT_BITS>(uint8_t pin)` | Simulates higher resolution (10–16 bits). |
@@ -69,4 +70,4 @@ void loop() {
 
 ## 🧾 License
 
-MIT License © 2025 Your Name
+MIT License © 2025 Tim Sonnenburg
